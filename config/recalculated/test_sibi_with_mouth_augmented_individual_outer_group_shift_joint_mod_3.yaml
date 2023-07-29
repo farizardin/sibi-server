@@ -1,0 +1,34 @@
+Experiment_name: sibi_individual_outer_group_ShiftGCN_mod_3_joint_n_5_kfold
+# feeder
+feeder: feeders.feeder_hsd.Feeder
+data_path: ./data/augmented_recalculate_normalized
+keypoints_normalization_method: coordinate_recalculation
+test_feeder_args:
+  # data_path: ./data/hsd/val_data_joint.npy
+  # label_path: ./data/hsd/val_label.pkl
+  debug: False
+
+# model
+model: model.shift_gcn.Model
+model_args:
+  num_class: 50 # 400
+  num_person: 1
+  num_point: 115
+  graph_group: [[0, 39], [40, 60], [61, 81], [82,114]]
+  method: 'grouped.outer'
+  weight: 3
+  graph: graph.skeleton_with_mouth.SkeletonWithMouth
+  graph_args:
+    labeling_mode: 'spatial'
+
+n_splits: 5
+# test
+phase: test
+device: [0]
+test_batch_size: 5
+weights: ./save_models/sibi_individual_outer_group_ShiftGCN_mod_3_joint_n_5_kfold_fold_5-29-14400.pt
+
+work_dir: ./work_dir/sibi_individual_outer_group_ShiftGCN_mod_3_joint_n_5_kfold_fold_5
+model_saved_name: ./save_models/sibi_individual_outer_group_ShiftGCN_mod_3_joint_n_5_kfold_fold_5
+save_score: True
+num_worker: 1

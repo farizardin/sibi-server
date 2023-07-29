@@ -1,0 +1,66 @@
+Experiment_name: sibi_individual_inner_group_ShiftGCN_mod_4_joint_n_5_kfold
+base_lr: 0.1
+batch_size: 5
+config: ./config/recalculated/train_sibi_with_mouth_augmented_individual_inner_group_shift_joint_mod_4.yaml
+data_path: ./data/augmented_recalculate_normalized
+device:
+- 0
+eval_interval: 5
+feeder: feeders.feeder_hsd.Feeder
+folds_range:
+- 3
+- 5
+ignore_weights: []
+log_interval: 100
+model: model.shift_gcn.Model
+model_args:
+  graph: graph.skeleton_with_mouth.SkeletonWithMouth
+  graph_args:
+    labeling_mode: spatial
+  graph_group:
+  - - 0
+    - 39
+  - - 40
+    - 60
+  - - 61
+    - 81
+  - - 82
+    - 114
+  method: grouped.inner
+  num_class: 50
+  num_person: 1
+  num_point: 115
+  weight: 4
+model_saved_name: ./save_models/sibi_individual_inner_group_ShiftGCN_mod_4_joint_n_5_kfold_fold_4
+n_splits: 5
+nesterov: true
+num_epoch: 30
+num_worker: 1
+only_train_epoch: 1
+only_train_part: true
+optimizer: SGD
+phase: train
+print_log: true
+save_interval: 2
+save_score: false
+seed: 1
+show_topk:
+- 1
+- 5
+start_epoch: 0
+step:
+- 20
+- 25
+test_batch_size: 5
+test_feeder_args: null
+train_feeder_args:
+  debug: false
+  normalization: false
+  random_choose: false
+  random_move: false
+  random_shift: false
+  window_size: -1
+warm_up_epoch: 0
+weight_decay: 0.0001
+weights: null
+work_dir: ./work_dir/sibi_individual_inner_group_ShiftGCN_mod_4_joint_n_5_kfold_fold_4

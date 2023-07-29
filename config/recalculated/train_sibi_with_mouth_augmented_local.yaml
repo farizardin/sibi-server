@@ -1,0 +1,54 @@
+Experiment_name: sibi_local_ShiftGCN_joint_n_5_kfold
+
+# feeder
+feeder: feeders.feeder_hsd.Feeder
+data_path: ./data/augmented_recalculate_normalized
+train_feeder_args:
+  debug: False
+  random_choose: False
+  random_shift: False
+  random_move: False
+  window_size: -1
+  normalization: False
+  # From GCN-ACS #
+  # random_choose: True
+  # random_move: True
+  # window_size: 150
+
+test_feeder_args:
+  # data_path: ./data/hsd/val_data_joint.npy
+  # label_path: ./data/hsd/val_label.pkl
+
+# model
+model: model.shift_gcn.Model
+model_args:
+  num_class: 50 # 400
+  num_person: 1
+  num_point: 115
+  method: 'local'
+  graph: graph.skeleton_with_mouth.SkeletonWithMouth
+  graph_args:
+    labeling_mode: 'spatial'
+
+n_splits: 5
+folds_range: [0, 5]
+#optim
+weight_decay: 0.0001
+base_lr: 0.1
+step: [20, 25]
+# From GCN-ACS #
+# step: [45, 60, 75]
+
+# training
+# device: [0,1,2,3]
+device: [0]
+only_train_epoch: 1
+batch_size: 5 # 64
+test_batch_size: 5 # 64
+num_epoch: 30 # 140
+nesterov: True
+num_worker: 1
+# From GCN-ACS #
+# batch_size: 96
+# test_batch_size: 48
+# num_epoch: 90

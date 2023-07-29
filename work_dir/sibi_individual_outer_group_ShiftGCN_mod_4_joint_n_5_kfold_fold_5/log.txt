@@ -1,0 +1,328 @@
+[ Mon May 15 06:37:40 2023 ] NUM WORKER: 1
+[ Mon May 15 06:40:59 2023 ] Parameters:
+{'work_dir': './work_dir/sibi_individual_outer_group_ShiftGCN_mod_4_joint_n_5_kfold_fold_5', 'model_saved_name': './save_models/sibi_individual_outer_group_ShiftGCN_mod_4_joint_n_5_kfold_fold_5', 'Experiment_name': 'sibi_individual_outer_group_ShiftGCN_mod_4_joint_n_5_kfold', 'config': './config/recalculated/train_sibi_with_mouth_augmented_individual_outer_group_shift_joint_mod_4.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 2, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5], 'n_splits': 5, 'feeder': 'feeders.feeder_hsd.Feeder', 'num_worker': 1, 'train_feeder_args': {'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': -1, 'normalization': False}, 'test_feeder_args': None, 'data_path': './data/augmented_recalculate_normalized', 'model': 'model.shift_gcn.Model', 'model_args': {'num_class': 50, 'num_person': 1, 'num_point': 115, 'graph_group': [[0, 39], [40, 60], [61, 81], [82, 114]], 'method': 'grouped.outer', 'weight': 4, 'graph': 'graph.skeleton_with_mouth.SkeletonWithMouth', 'graph_args': {'labeling_mode': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.1, 'step': [20, 25], 'device': [0], 'optimizer': 'SGD', 'nesterov': True, 'batch_size': 5, 'test_batch_size': 5, 'start_epoch': 0, 'num_epoch': 30, 'folds_range': [4, 5], 'weight_decay': 0.0001, 'only_train_part': True, 'only_train_epoch': 1, 'warm_up_epoch': 0}
+
+[ Mon May 15 06:40:59 2023 ] Training epoch: 1
+[ Mon May 15 06:41:47 2023 ] 	Batch(99/480) done. Loss: 3.0850  lr:0.100000  network_time: 0.0108
+[ Mon May 15 06:42:34 2023 ] 	Batch(199/480) done. Loss: 3.1832  lr:0.100000  network_time: 0.0108
+[ Mon May 15 06:43:21 2023 ] 	Batch(299/480) done. Loss: 3.2153  lr:0.100000  network_time: 0.0107
+[ Mon May 15 06:44:08 2023 ] 	Batch(399/480) done. Loss: 4.1605  lr:0.100000  network_time: 0.0118
+[ Mon May 15 06:44:46 2023 ] 	Training Accuracy: 5.96%
+[ Mon May 15 06:44:46 2023 ] Eval epoch: 1
+[ Mon May 15 06:45:02 2023 ] 	Mean test loss of 120 batches: 3.4130213260650635.
+[ Mon May 15 06:45:02 2023 ] 	Top1: 8.50%
+[ Mon May 15 06:45:02 2023 ] 	Top5: 40.67%
+[ Mon May 15 06:45:02 2023 ] Training epoch: 2
+[ Mon May 15 06:45:12 2023 ] 	Batch(19/480) done. Loss: 2.8118  lr:0.100000  network_time: 0.0106
+[ Mon May 15 06:45:59 2023 ] 	Batch(119/480) done. Loss: 3.6521  lr:0.100000  network_time: 0.0105
+[ Mon May 15 06:46:46 2023 ] 	Batch(219/480) done. Loss: 2.9613  lr:0.100000  network_time: 0.0107
+[ Mon May 15 06:47:33 2023 ] 	Batch(319/480) done. Loss: 2.6089  lr:0.100000  network_time: 0.0107
+[ Mon May 15 06:48:20 2023 ] 	Batch(419/480) done. Loss: 3.1438  lr:0.100000  network_time: 0.0112
+[ Mon May 15 06:48:48 2023 ] 	Training Accuracy: 11.33%
+[ Mon May 15 06:48:48 2023 ] Eval epoch: 2
+[ Mon May 15 06:49:05 2023 ] 	Mean test loss of 120 batches: 4.06081485748291.
+[ Mon May 15 06:49:05 2023 ] 	Top1: 12.67%
+[ Mon May 15 06:49:05 2023 ] 	Top5: 52.67%
+[ Mon May 15 06:49:05 2023 ] Training epoch: 3
+[ Mon May 15 06:49:23 2023 ] 	Batch(39/480) done. Loss: 2.6677  lr:0.100000  network_time: 0.0114
+[ Mon May 15 06:50:10 2023 ] 	Batch(139/480) done. Loss: 2.8271  lr:0.100000  network_time: 0.0112
+[ Mon May 15 06:50:57 2023 ] 	Batch(239/480) done. Loss: 2.1689  lr:0.100000  network_time: 0.0114
+[ Mon May 15 06:51:44 2023 ] 	Batch(339/480) done. Loss: 3.0420  lr:0.100000  network_time: 0.0108
+[ Mon May 15 06:52:31 2023 ] 	Batch(439/480) done. Loss: 2.9715  lr:0.100000  network_time: 0.0111
+[ Mon May 15 06:52:50 2023 ] 	Training Accuracy: 16.38%
+[ Mon May 15 06:52:50 2023 ] Eval epoch: 3
+[ Mon May 15 06:53:07 2023 ] 	Mean test loss of 120 batches: 2.526931047439575.
+[ Mon May 15 06:53:07 2023 ] 	Top1: 23.67%
+[ Mon May 15 06:53:07 2023 ] 	Top5: 71.50%
+[ Mon May 15 06:53:07 2023 ] Training epoch: 4
+[ Mon May 15 06:53:35 2023 ] 	Batch(59/480) done. Loss: 2.6025  lr:0.100000  network_time: 0.0109
+[ Mon May 15 06:54:22 2023 ] 	Batch(159/480) done. Loss: 2.8207  lr:0.100000  network_time: 0.0111
+[ Mon May 15 06:55:09 2023 ] 	Batch(259/480) done. Loss: 2.3156  lr:0.100000  network_time: 0.0111
+[ Mon May 15 06:55:56 2023 ] 	Batch(359/480) done. Loss: 2.2191  lr:0.100000  network_time: 0.0113
+[ Mon May 15 06:56:43 2023 ] 	Batch(459/480) done. Loss: 3.3634  lr:0.100000  network_time: 0.0112
+[ Mon May 15 06:56:53 2023 ] 	Training Accuracy: 24.92%
+[ Mon May 15 06:56:53 2023 ] Eval epoch: 4
+[ Mon May 15 06:57:09 2023 ] 	Mean test loss of 120 batches: 2.2750325202941895.
+[ Mon May 15 06:57:09 2023 ] 	Top1: 30.83%
+[ Mon May 15 06:57:09 2023 ] 	Top5: 75.83%
+[ Mon May 15 06:57:09 2023 ] Training epoch: 5
+[ Mon May 15 06:57:47 2023 ] 	Batch(79/480) done. Loss: 2.4135  lr:0.100000  network_time: 0.0117
+[ Mon May 15 06:58:34 2023 ] 	Batch(179/480) done. Loss: 1.8141  lr:0.100000  network_time: 0.0115
+[ Mon May 15 06:59:21 2023 ] 	Batch(279/480) done. Loss: 1.6352  lr:0.100000  network_time: 0.0118
+[ Mon May 15 07:00:08 2023 ] 	Batch(379/480) done. Loss: 2.1344  lr:0.100000  network_time: 0.0110
+[ Mon May 15 07:00:55 2023 ] 	Batch(479/480) done. Loss: 1.6263  lr:0.100000  network_time: 0.0117
+[ Mon May 15 07:00:55 2023 ] 	Training Accuracy: 32.46%
+[ Mon May 15 07:00:55 2023 ] Eval epoch: 5
+[ Mon May 15 07:01:12 2023 ] 	Mean test loss of 120 batches: 2.406655788421631.
+[ Mon May 15 07:01:12 2023 ] 	Top1: 37.50%
+[ Mon May 15 07:01:12 2023 ] 	Top5: 78.50%
+[ Mon May 15 07:01:12 2023 ] Training epoch: 6
+[ Mon May 15 07:01:59 2023 ] 	Batch(99/480) done. Loss: 2.1397  lr:0.100000  network_time: 0.0119
+[ Mon May 15 07:02:46 2023 ] 	Batch(199/480) done. Loss: 1.7361  lr:0.100000  network_time: 0.0110
+[ Mon May 15 07:03:33 2023 ] 	Batch(299/480) done. Loss: 1.2787  lr:0.100000  network_time: 0.0108
+[ Mon May 15 07:04:20 2023 ] 	Batch(399/480) done. Loss: 2.0837  lr:0.100000  network_time: 0.0113
+[ Mon May 15 07:04:58 2023 ] 	Training Accuracy: 43.12%
+[ Mon May 15 07:04:58 2023 ] Eval epoch: 6
+[ Mon May 15 07:05:14 2023 ] 	Mean test loss of 120 batches: 1.753200888633728.
+[ Mon May 15 07:05:14 2023 ] 	Top1: 46.67%
+[ Mon May 15 07:05:14 2023 ] 	Top5: 81.83%
+[ Mon May 15 07:05:14 2023 ] Training epoch: 7
+[ Mon May 15 07:05:24 2023 ] 	Batch(19/480) done. Loss: 1.6283  lr:0.100000  network_time: 0.0109
+[ Mon May 15 07:06:11 2023 ] 	Batch(119/480) done. Loss: 1.5550  lr:0.100000  network_time: 0.0110
+[ Mon May 15 07:06:58 2023 ] 	Batch(219/480) done. Loss: 1.0074  lr:0.100000  network_time: 0.0120
+[ Mon May 15 07:07:45 2023 ] 	Batch(319/480) done. Loss: 0.9080  lr:0.100000  network_time: 0.0119
+[ Mon May 15 07:08:32 2023 ] 	Batch(419/480) done. Loss: 2.3766  lr:0.100000  network_time: 0.0113
+[ Mon May 15 07:09:00 2023 ] 	Training Accuracy: 51.12%
+[ Mon May 15 07:09:00 2023 ] Eval epoch: 7
+[ Mon May 15 07:09:17 2023 ] 	Mean test loss of 120 batches: 1.4778937101364136.
+[ Mon May 15 07:09:17 2023 ] 	Top1: 54.17%
+[ Mon May 15 07:09:17 2023 ] 	Top5: 93.33%
+[ Mon May 15 07:09:17 2023 ] Training epoch: 8
+[ Mon May 15 07:09:36 2023 ] 	Batch(39/480) done. Loss: 0.9479  lr:0.100000  network_time: 0.0112
+[ Mon May 15 07:10:23 2023 ] 	Batch(139/480) done. Loss: 1.3140  lr:0.100000  network_time: 0.0110
+[ Mon May 15 07:11:10 2023 ] 	Batch(239/480) done. Loss: 2.3154  lr:0.100000  network_time: 0.0115
+[ Mon May 15 07:11:57 2023 ] 	Batch(339/480) done. Loss: 1.3651  lr:0.100000  network_time: 0.0109
+[ Mon May 15 07:12:44 2023 ] 	Batch(439/480) done. Loss: 1.5753  lr:0.100000  network_time: 0.0111
+[ Mon May 15 07:13:03 2023 ] 	Training Accuracy: 58.46%
+[ Mon May 15 07:13:03 2023 ] Eval epoch: 8
+[ Mon May 15 07:13:19 2023 ] 	Mean test loss of 120 batches: 1.4258573055267334.
+[ Mon May 15 07:13:19 2023 ] 	Top1: 60.50%
+[ Mon May 15 07:13:19 2023 ] 	Top5: 97.33%
+[ Mon May 15 07:13:19 2023 ] Training epoch: 9
+[ Mon May 15 07:13:48 2023 ] 	Batch(59/480) done. Loss: 0.4995  lr:0.100000  network_time: 0.0111
+[ Mon May 15 07:14:35 2023 ] 	Batch(159/480) done. Loss: 1.8221  lr:0.100000  network_time: 0.0114
+[ Mon May 15 07:15:22 2023 ] 	Batch(259/480) done. Loss: 0.9666  lr:0.100000  network_time: 0.0112
+[ Mon May 15 07:16:09 2023 ] 	Batch(359/480) done. Loss: 1.6386  lr:0.100000  network_time: 0.0111
+[ Mon May 15 07:16:56 2023 ] 	Batch(459/480) done. Loss: 1.0134  lr:0.100000  network_time: 0.0114
+[ Mon May 15 07:17:05 2023 ] 	Training Accuracy: 66.83%
+[ Mon May 15 07:17:05 2023 ] Eval epoch: 9
+[ Mon May 15 07:17:22 2023 ] 	Mean test loss of 120 batches: 1.094719409942627.
+[ Mon May 15 07:17:22 2023 ] 	Top1: 68.50%
+[ Mon May 15 07:17:22 2023 ] 	Top5: 95.50%
+[ Mon May 15 07:17:22 2023 ] Training epoch: 10
+[ Mon May 15 07:18:00 2023 ] 	Batch(79/480) done. Loss: 0.3402  lr:0.100000  network_time: 0.0111
+[ Mon May 15 07:18:47 2023 ] 	Batch(179/480) done. Loss: 0.8519  lr:0.100000  network_time: 0.0108
+[ Mon May 15 07:19:34 2023 ] 	Batch(279/480) done. Loss: 1.0535  lr:0.100000  network_time: 0.0108
+[ Mon May 15 07:20:21 2023 ] 	Batch(379/480) done. Loss: 0.5046  lr:0.100000  network_time: 0.0107
+[ Mon May 15 07:21:08 2023 ] 	Batch(479/480) done. Loss: 0.8633  lr:0.100000  network_time: 0.0113
+[ Mon May 15 07:21:08 2023 ] 	Training Accuracy: 71.04%
+[ Mon May 15 07:21:08 2023 ] Eval epoch: 10
+[ Mon May 15 07:21:24 2023 ] 	Mean test loss of 120 batches: 1.1657131910324097.
+[ Mon May 15 07:21:24 2023 ] 	Top1: 65.67%
+[ Mon May 15 07:21:24 2023 ] 	Top5: 94.17%
+[ Mon May 15 07:21:24 2023 ] Training epoch: 11
+[ Mon May 15 07:22:11 2023 ] 	Batch(99/480) done. Loss: 1.1104  lr:0.100000  network_time: 0.0107
+[ Mon May 15 07:22:58 2023 ] 	Batch(199/480) done. Loss: 0.3900  lr:0.100000  network_time: 0.0108
+[ Mon May 15 07:23:45 2023 ] 	Batch(299/480) done. Loss: 0.8578  lr:0.100000  network_time: 0.0109
+[ Mon May 15 07:24:32 2023 ] 	Batch(399/480) done. Loss: 0.4514  lr:0.100000  network_time: 0.0112
+[ Mon May 15 07:25:10 2023 ] 	Training Accuracy: 74.71%
+[ Mon May 15 07:25:10 2023 ] Eval epoch: 11
+[ Mon May 15 07:25:27 2023 ] 	Mean test loss of 120 batches: 0.6657951474189758.
+[ Mon May 15 07:25:27 2023 ] 	Top1: 78.33%
+[ Mon May 15 07:25:27 2023 ] 	Top5: 99.17%
+[ Mon May 15 07:25:27 2023 ] Training epoch: 12
+[ Mon May 15 07:25:36 2023 ] 	Batch(19/480) done. Loss: 1.6620  lr:0.100000  network_time: 0.0120
+[ Mon May 15 07:26:23 2023 ] 	Batch(119/480) done. Loss: 0.4482  lr:0.100000  network_time: 0.0108
+[ Mon May 15 07:27:10 2023 ] 	Batch(219/480) done. Loss: 0.0928  lr:0.100000  network_time: 0.0109
+[ Mon May 15 07:27:57 2023 ] 	Batch(319/480) done. Loss: 0.3301  lr:0.100000  network_time: 0.0107
+[ Mon May 15 07:28:44 2023 ] 	Batch(419/480) done. Loss: 0.9411  lr:0.100000  network_time: 0.0114
+[ Mon May 15 07:29:13 2023 ] 	Training Accuracy: 78.25%
+[ Mon May 15 07:29:13 2023 ] Eval epoch: 12
+[ Mon May 15 07:29:29 2023 ] 	Mean test loss of 120 batches: 0.7102212309837341.
+[ Mon May 15 07:29:29 2023 ] 	Top1: 80.50%
+[ Mon May 15 07:29:29 2023 ] 	Top5: 98.83%
+[ Mon May 15 07:29:29 2023 ] Training epoch: 13
+[ Mon May 15 07:29:48 2023 ] 	Batch(39/480) done. Loss: 0.5437  lr:0.100000  network_time: 0.0113
+[ Mon May 15 07:30:35 2023 ] 	Batch(139/480) done. Loss: 0.3233  lr:0.100000  network_time: 0.0110
+[ Mon May 15 07:31:22 2023 ] 	Batch(239/480) done. Loss: 0.1601  lr:0.100000  network_time: 0.0110
+[ Mon May 15 07:32:09 2023 ] 	Batch(339/480) done. Loss: 0.3999  lr:0.100000  network_time: 0.0108
+[ Mon May 15 07:32:56 2023 ] 	Batch(439/480) done. Loss: 0.4401  lr:0.100000  network_time: 0.0109
+[ Mon May 15 07:33:15 2023 ] 	Training Accuracy: 81.75%
+[ Mon May 15 07:33:15 2023 ] Eval epoch: 13
+[ Mon May 15 07:33:32 2023 ] 	Mean test loss of 120 batches: 0.7925755977630615.
+[ Mon May 15 07:33:32 2023 ] 	Top1: 77.00%
+[ Mon May 15 07:33:32 2023 ] 	Top5: 99.17%
+[ Mon May 15 07:33:32 2023 ] Training epoch: 14
+[ Mon May 15 07:34:00 2023 ] 	Batch(59/480) done. Loss: 1.7302  lr:0.100000  network_time: 0.0113
+[ Mon May 15 07:34:47 2023 ] 	Batch(159/480) done. Loss: 0.7610  lr:0.100000  network_time: 0.0115
+[ Mon May 15 07:35:34 2023 ] 	Batch(259/480) done. Loss: 1.0875  lr:0.100000  network_time: 0.0119
+[ Mon May 15 07:36:21 2023 ] 	Batch(359/480) done. Loss: 0.4053  lr:0.100000  network_time: 0.0108
+[ Mon May 15 07:37:08 2023 ] 	Batch(459/480) done. Loss: 1.0630  lr:0.100000  network_time: 0.0109
+[ Mon May 15 07:37:18 2023 ] 	Training Accuracy: 81.08%
+[ Mon May 15 07:37:18 2023 ] Eval epoch: 14
+[ Mon May 15 07:37:34 2023 ] 	Mean test loss of 120 batches: 0.40117207169532776.
+[ Mon May 15 07:37:34 2023 ] 	Top1: 87.17%
+[ Mon May 15 07:37:34 2023 ] 	Top5: 99.83%
+[ Mon May 15 07:37:34 2023 ] Training epoch: 15
+[ Mon May 15 07:38:12 2023 ] 	Batch(79/480) done. Loss: 0.9580  lr:0.100000  network_time: 0.0117
+[ Mon May 15 07:38:59 2023 ] 	Batch(179/480) done. Loss: 0.7164  lr:0.100000  network_time: 0.0112
+[ Mon May 15 07:39:46 2023 ] 	Batch(279/480) done. Loss: 0.4841  lr:0.100000  network_time: 0.0108
+[ Mon May 15 07:40:33 2023 ] 	Batch(379/480) done. Loss: 0.9276  lr:0.100000  network_time: 0.0116
+[ Mon May 15 07:41:20 2023 ] 	Batch(479/480) done. Loss: 0.3362  lr:0.100000  network_time: 0.0111
+[ Mon May 15 07:41:20 2023 ] 	Training Accuracy: 83.04%
+[ Mon May 15 07:41:20 2023 ] Eval epoch: 15
+[ Mon May 15 07:41:37 2023 ] 	Mean test loss of 120 batches: 0.5349815487861633.
+[ Mon May 15 07:41:37 2023 ] 	Top1: 81.67%
+[ Mon May 15 07:41:37 2023 ] 	Top5: 99.67%
+[ Mon May 15 07:41:37 2023 ] Training epoch: 16
+[ Mon May 15 07:42:24 2023 ] 	Batch(99/480) done. Loss: 1.9423  lr:0.100000  network_time: 0.0110
+[ Mon May 15 07:43:11 2023 ] 	Batch(199/480) done. Loss: 0.0754  lr:0.100000  network_time: 0.0109
+[ Mon May 15 07:43:58 2023 ] 	Batch(299/480) done. Loss: 0.4911  lr:0.100000  network_time: 0.0109
+[ Mon May 15 07:44:45 2023 ] 	Batch(399/480) done. Loss: 0.7541  lr:0.100000  network_time: 0.0111
+[ Mon May 15 07:45:23 2023 ] 	Training Accuracy: 85.79%
+[ Mon May 15 07:45:23 2023 ] Eval epoch: 16
+[ Mon May 15 07:45:40 2023 ] 	Mean test loss of 120 batches: 0.2415304183959961.
+[ Mon May 15 07:45:40 2023 ] 	Top1: 92.33%
+[ Mon May 15 07:45:40 2023 ] 	Top5: 100.00%
+[ Mon May 15 07:45:40 2023 ] Training epoch: 17
+[ Mon May 15 07:45:49 2023 ] 	Batch(19/480) done. Loss: 0.1832  lr:0.100000  network_time: 0.0108
+[ Mon May 15 07:46:36 2023 ] 	Batch(119/480) done. Loss: 1.0728  lr:0.100000  network_time: 0.0106
+[ Mon May 15 07:47:23 2023 ] 	Batch(219/480) done. Loss: 0.1903  lr:0.100000  network_time: 0.0109
+[ Mon May 15 07:48:10 2023 ] 	Batch(319/480) done. Loss: 0.2655  lr:0.100000  network_time: 0.0108
+[ Mon May 15 07:48:57 2023 ] 	Batch(419/480) done. Loss: 0.1224  lr:0.100000  network_time: 0.0110
+[ Mon May 15 07:49:25 2023 ] 	Training Accuracy: 85.75%
+[ Mon May 15 07:49:25 2023 ] Eval epoch: 17
+[ Mon May 15 07:49:42 2023 ] 	Mean test loss of 120 batches: 0.5105006098747253.
+[ Mon May 15 07:49:42 2023 ] 	Top1: 87.33%
+[ Mon May 15 07:49:42 2023 ] 	Top5: 99.33%
+[ Mon May 15 07:49:42 2023 ] Training epoch: 18
+[ Mon May 15 07:50:01 2023 ] 	Batch(39/480) done. Loss: 0.0609  lr:0.100000  network_time: 0.0106
+[ Mon May 15 07:50:48 2023 ] 	Batch(139/480) done. Loss: 0.1211  lr:0.100000  network_time: 0.0105
+[ Mon May 15 07:51:35 2023 ] 	Batch(239/480) done. Loss: 0.3044  lr:0.100000  network_time: 0.0108
+[ Mon May 15 07:52:22 2023 ] 	Batch(339/480) done. Loss: 0.2518  lr:0.100000  network_time: 0.0105
+[ Mon May 15 07:53:09 2023 ] 	Batch(439/480) done. Loss: 0.2364  lr:0.100000  network_time: 0.0113
+[ Mon May 15 07:53:28 2023 ] 	Training Accuracy: 87.71%
+[ Mon May 15 07:53:28 2023 ] Eval epoch: 18
+[ Mon May 15 07:53:44 2023 ] 	Mean test loss of 120 batches: 1.0225187540054321.
+[ Mon May 15 07:53:44 2023 ] 	Top1: 82.17%
+[ Mon May 15 07:53:44 2023 ] 	Top5: 99.50%
+[ Mon May 15 07:53:44 2023 ] Training epoch: 19
+[ Mon May 15 07:54:13 2023 ] 	Batch(59/480) done. Loss: 0.2088  lr:0.100000  network_time: 0.0110
+[ Mon May 15 07:55:00 2023 ] 	Batch(159/480) done. Loss: 0.2358  lr:0.100000  network_time: 0.0110
+[ Mon May 15 07:55:47 2023 ] 	Batch(259/480) done. Loss: 0.0722  lr:0.100000  network_time: 0.0107
+[ Mon May 15 07:56:34 2023 ] 	Batch(359/480) done. Loss: 0.1644  lr:0.100000  network_time: 0.0108
+[ Mon May 15 07:57:21 2023 ] 	Batch(459/480) done. Loss: 0.3837  lr:0.100000  network_time: 0.0111
+[ Mon May 15 07:57:30 2023 ] 	Training Accuracy: 88.42%
+[ Mon May 15 07:57:30 2023 ] Eval epoch: 19
+[ Mon May 15 07:57:47 2023 ] 	Mean test loss of 120 batches: 0.1669483631849289.
+[ Mon May 15 07:57:47 2023 ] 	Top1: 94.33%
+[ Mon May 15 07:57:47 2023 ] 	Top5: 100.00%
+[ Mon May 15 07:57:47 2023 ] Training epoch: 20
+[ Mon May 15 07:58:24 2023 ] 	Batch(79/480) done. Loss: 0.2081  lr:0.100000  network_time: 0.0105
+[ Mon May 15 07:59:12 2023 ] 	Batch(179/480) done. Loss: 0.6972  lr:0.100000  network_time: 0.0113
+[ Mon May 15 07:59:58 2023 ] 	Batch(279/480) done. Loss: 0.2489  lr:0.100000  network_time: 0.0112
+[ Mon May 15 08:00:46 2023 ] 	Batch(379/480) done. Loss: 0.3175  lr:0.100000  network_time: 0.0110
+[ Mon May 15 08:01:33 2023 ] 	Batch(479/480) done. Loss: 0.2344  lr:0.100000  network_time: 0.0116
+[ Mon May 15 08:01:33 2023 ] 	Training Accuracy: 88.54%
+[ Mon May 15 08:01:33 2023 ] Eval epoch: 20
+[ Mon May 15 08:01:49 2023 ] 	Mean test loss of 120 batches: 0.2990129292011261.
+[ Mon May 15 08:01:49 2023 ] 	Top1: 92.17%
+[ Mon May 15 08:01:49 2023 ] 	Top5: 99.83%
+[ Mon May 15 08:01:49 2023 ] Training epoch: 21
+[ Mon May 15 08:02:36 2023 ] 	Batch(99/480) done. Loss: 0.6342  lr:0.010000  network_time: 0.0109
+[ Mon May 15 08:03:23 2023 ] 	Batch(199/480) done. Loss: 0.0717  lr:0.010000  network_time: 0.0111
+[ Mon May 15 08:04:10 2023 ] 	Batch(299/480) done. Loss: 0.1277  lr:0.010000  network_time: 0.0110
+[ Mon May 15 08:04:57 2023 ] 	Batch(399/480) done. Loss: 0.0679  lr:0.010000  network_time: 0.0111
+[ Mon May 15 08:05:35 2023 ] 	Training Accuracy: 96.62%
+[ Mon May 15 08:05:35 2023 ] Eval epoch: 21
+[ Mon May 15 08:05:52 2023 ] 	Mean test loss of 120 batches: 0.053422193974256516.
+[ Mon May 15 08:05:52 2023 ] 	Top1: 98.50%
+[ Mon May 15 08:05:52 2023 ] 	Top5: 100.00%
+[ Mon May 15 08:05:52 2023 ] Training epoch: 22
+[ Mon May 15 08:06:01 2023 ] 	Batch(19/480) done. Loss: 0.2316  lr:0.010000  network_time: 0.0108
+[ Mon May 15 08:06:48 2023 ] 	Batch(119/480) done. Loss: 0.0063  lr:0.010000  network_time: 0.0108
+[ Mon May 15 08:07:35 2023 ] 	Batch(219/480) done. Loss: 0.1418  lr:0.010000  network_time: 0.0115
+[ Mon May 15 08:08:22 2023 ] 	Batch(319/480) done. Loss: 0.0144  lr:0.010000  network_time: 0.0109
+[ Mon May 15 08:09:09 2023 ] 	Batch(419/480) done. Loss: 0.0347  lr:0.010000  network_time: 0.0116
+[ Mon May 15 08:09:37 2023 ] 	Training Accuracy: 98.96%
+[ Mon May 15 08:09:38 2023 ] Eval epoch: 22
+[ Mon May 15 08:09:54 2023 ] 	Mean test loss of 120 batches: 0.062224410474300385.
+[ Mon May 15 08:09:54 2023 ] 	Top1: 98.83%
+[ Mon May 15 08:09:54 2023 ] 	Top5: 100.00%
+[ Mon May 15 08:09:54 2023 ] Training epoch: 23
+[ Mon May 15 08:10:13 2023 ] 	Batch(39/480) done. Loss: 0.0301  lr:0.010000  network_time: 0.0110
+[ Mon May 15 08:11:00 2023 ] 	Batch(139/480) done. Loss: 0.0429  lr:0.010000  network_time: 0.0108
+[ Mon May 15 08:11:47 2023 ] 	Batch(239/480) done. Loss: 0.0224  lr:0.010000  network_time: 0.0117
+[ Mon May 15 08:12:34 2023 ] 	Batch(339/480) done. Loss: 0.0257  lr:0.010000  network_time: 0.0111
+[ Mon May 15 08:13:21 2023 ] 	Batch(439/480) done. Loss: 0.0091  lr:0.010000  network_time: 0.0111
+[ Mon May 15 08:13:40 2023 ] 	Training Accuracy: 99.33%
+[ Mon May 15 08:13:40 2023 ] Eval epoch: 23
+[ Mon May 15 08:13:56 2023 ] 	Mean test loss of 120 batches: 0.06639453023672104.
+[ Mon May 15 08:13:56 2023 ] 	Top1: 98.50%
+[ Mon May 15 08:13:56 2023 ] 	Top5: 100.00%
+[ Mon May 15 08:13:56 2023 ] Training epoch: 24
+[ Mon May 15 08:14:25 2023 ] 	Batch(59/480) done. Loss: 0.0253  lr:0.010000  network_time: 0.0115
+[ Mon May 15 08:15:12 2023 ] 	Batch(159/480) done. Loss: 0.0549  lr:0.010000  network_time: 0.0110
+[ Mon May 15 08:15:59 2023 ] 	Batch(259/480) done. Loss: 0.0266  lr:0.010000  network_time: 0.0108
+[ Mon May 15 08:16:46 2023 ] 	Batch(359/480) done. Loss: 0.0079  lr:0.010000  network_time: 0.0111
+[ Mon May 15 08:17:33 2023 ] 	Batch(459/480) done. Loss: 0.0274  lr:0.010000  network_time: 0.0107
+[ Mon May 15 08:17:42 2023 ] 	Training Accuracy: 99.25%
+[ Mon May 15 08:17:42 2023 ] Eval epoch: 24
+[ Mon May 15 08:17:59 2023 ] 	Mean test loss of 120 batches: 0.028845500200986862.
+[ Mon May 15 08:17:59 2023 ] 	Top1: 99.17%
+[ Mon May 15 08:17:59 2023 ] 	Top5: 100.00%
+[ Mon May 15 08:17:59 2023 ] Training epoch: 25
+[ Mon May 15 08:18:37 2023 ] 	Batch(79/480) done. Loss: 0.0243  lr:0.010000  network_time: 0.0114
+[ Mon May 15 08:19:24 2023 ] 	Batch(179/480) done. Loss: 0.0034  lr:0.010000  network_time: 0.0114
+[ Mon May 15 08:20:11 2023 ] 	Batch(279/480) done. Loss: 0.0285  lr:0.010000  network_time: 0.0112
+[ Mon May 15 08:20:58 2023 ] 	Batch(379/480) done. Loss: 0.0150  lr:0.010000  network_time: 0.0113
+[ Mon May 15 08:21:45 2023 ] 	Batch(479/480) done. Loss: 0.0301  lr:0.010000  network_time: 0.0122
+[ Mon May 15 08:21:45 2023 ] 	Training Accuracy: 99.38%
+[ Mon May 15 08:21:45 2023 ] Eval epoch: 25
+[ Mon May 15 08:22:02 2023 ] 	Mean test loss of 120 batches: 0.02517865225672722.
+[ Mon May 15 08:22:02 2023 ] 	Top1: 99.17%
+[ Mon May 15 08:22:02 2023 ] 	Top5: 100.00%
+[ Mon May 15 08:22:02 2023 ] Training epoch: 26
+[ Mon May 15 08:22:49 2023 ] 	Batch(99/480) done. Loss: 0.0088  lr:0.001000  network_time: 0.0111
+[ Mon May 15 08:23:36 2023 ] 	Batch(199/480) done. Loss: 0.0219  lr:0.001000  network_time: 0.0112
+[ Mon May 15 08:24:23 2023 ] 	Batch(299/480) done. Loss: 0.0110  lr:0.001000  network_time: 0.0107
+[ Mon May 15 08:25:10 2023 ] 	Batch(399/480) done. Loss: 0.0649  lr:0.001000  network_time: 0.0115
+[ Mon May 15 08:25:48 2023 ] 	Training Accuracy: 99.25%
+[ Mon May 15 08:25:48 2023 ] Eval epoch: 26
+[ Mon May 15 08:26:04 2023 ] 	Mean test loss of 120 batches: 0.03479870781302452.
+[ Mon May 15 08:26:04 2023 ] 	Top1: 99.33%
+[ Mon May 15 08:26:04 2023 ] 	Top5: 100.00%
+[ Mon May 15 08:26:04 2023 ] Training epoch: 27
+[ Mon May 15 08:26:14 2023 ] 	Batch(19/480) done. Loss: 0.0197  lr:0.001000  network_time: 0.0115
+[ Mon May 15 08:27:01 2023 ] 	Batch(119/480) done. Loss: 0.0040  lr:0.001000  network_time: 0.0113
+[ Mon May 15 08:27:48 2023 ] 	Batch(219/480) done. Loss: 0.0217  lr:0.001000  network_time: 0.0114
+[ Mon May 15 08:28:35 2023 ] 	Batch(319/480) done. Loss: 0.0166  lr:0.001000  network_time: 0.0110
+[ Mon May 15 08:29:22 2023 ] 	Batch(419/480) done. Loss: 0.0155  lr:0.001000  network_time: 0.0108
+[ Mon May 15 08:29:50 2023 ] 	Training Accuracy: 99.71%
+[ Mon May 15 08:29:50 2023 ] Eval epoch: 27
+[ Mon May 15 08:30:07 2023 ] 	Mean test loss of 120 batches: 0.019644731655716896.
+[ Mon May 15 08:30:07 2023 ] 	Top1: 99.50%
+[ Mon May 15 08:30:07 2023 ] 	Top5: 100.00%
+[ Mon May 15 08:30:07 2023 ] Training epoch: 28
+[ Mon May 15 08:30:26 2023 ] 	Batch(39/480) done. Loss: 0.0114  lr:0.001000  network_time: 0.0114
+[ Mon May 15 08:31:13 2023 ] 	Batch(139/480) done. Loss: 0.0331  lr:0.001000  network_time: 0.0104
+[ Mon May 15 08:32:00 2023 ] 	Batch(239/480) done. Loss: 0.0426  lr:0.001000  network_time: 0.0108
+[ Mon May 15 08:32:47 2023 ] 	Batch(339/480) done. Loss: 0.0968  lr:0.001000  network_time: 0.0110
+[ Mon May 15 08:33:34 2023 ] 	Batch(439/480) done. Loss: 0.0070  lr:0.001000  network_time: 0.0106
+[ Mon May 15 08:33:53 2023 ] 	Training Accuracy: 99.42%
+[ Mon May 15 08:33:53 2023 ] Eval epoch: 28
+[ Mon May 15 08:34:09 2023 ] 	Mean test loss of 120 batches: 0.024638289585709572.
+[ Mon May 15 08:34:10 2023 ] 	Top1: 99.17%
+[ Mon May 15 08:34:10 2023 ] 	Top5: 100.00%
+[ Mon May 15 08:34:10 2023 ] Training epoch: 29
+[ Mon May 15 08:34:38 2023 ] 	Batch(59/480) done. Loss: 0.0489  lr:0.001000  network_time: 0.0105
+[ Mon May 15 08:35:25 2023 ] 	Batch(159/480) done. Loss: 0.0431  lr:0.001000  network_time: 0.0111
+[ Mon May 15 08:36:12 2023 ] 	Batch(259/480) done. Loss: 0.0087  lr:0.001000  network_time: 0.0111
+[ Mon May 15 08:36:59 2023 ] 	Batch(359/480) done. Loss: 0.0121  lr:0.001000  network_time: 0.0114
+[ Mon May 15 08:37:46 2023 ] 	Batch(459/480) done. Loss: 0.3952  lr:0.001000  network_time: 0.0106
+[ Mon May 15 08:37:55 2023 ] 	Training Accuracy: 99.62%
+[ Mon May 15 08:37:56 2023 ] Eval epoch: 29
+[ Mon May 15 08:38:12 2023 ] 	Mean test loss of 120 batches: 0.026090402156114578.
+[ Mon May 15 08:38:12 2023 ] 	Top1: 99.33%
+[ Mon May 15 08:38:12 2023 ] 	Top5: 100.00%
+[ Mon May 15 08:38:12 2023 ] Training epoch: 30
+[ Mon May 15 08:38:50 2023 ] 	Batch(79/480) done. Loss: 0.0318  lr:0.001000  network_time: 0.0106
+[ Mon May 15 08:39:37 2023 ] 	Batch(179/480) done. Loss: 0.0164  lr:0.001000  network_time: 0.0107
+[ Mon May 15 08:40:24 2023 ] 	Batch(279/480) done. Loss: 0.0106  lr:0.001000  network_time: 0.0112
+[ Mon May 15 08:41:11 2023 ] 	Batch(379/480) done. Loss: 0.0270  lr:0.001000  network_time: 0.0121
+[ Mon May 15 08:41:58 2023 ] 	Batch(479/480) done. Loss: 0.0136  lr:0.001000  network_time: 0.0112
+[ Mon May 15 08:41:58 2023 ] 	Training Accuracy: 99.54%
+[ Mon May 15 08:41:58 2023 ] Eval epoch: 30
+[ Mon May 15 08:42:15 2023 ] 	Mean test loss of 120 batches: 0.022715719416737556.
+[ Mon May 15 08:42:15 2023 ] 	Top1: 99.33%
+[ Mon May 15 08:42:15 2023 ] 	Top5: 100.00%
